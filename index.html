@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    main{
+      width: 100%;
+      height: 100vh;
+      display: flex;
+    >figure{
+      width: 300px;
+      height: 500px;
+      margin: 100px auto;
+      border: 3px solid rgb(56, 54, 54);
+      position: relative;
+      overflow: hidden;
+      &:hover{
+        img{
+          top: -20%;
+        }
+        >div {
+          top: 0;
+          background-color: rgba(0, 0, 0, 0.344);
+          >p {
+            margin-top: 40px;
+          }
+        }
+      }
+      >* {
+        position: absolute;
+        transition: .4s;
+      }
+      img {
+        width: 120%;
+        height: 120%;
+        top: 0;
+        left: -10%;
+        object-fit: cover;
+      }
+      >div{
+        width: 100%;
+        height: 100%;
+        /* background-color: rgba(0, 0, 0, 0.296); */
+        top: 333px;
+        left: 0;
+        padding: 20px;
+        padding-top: 100px;
+        >*{
+          color: white;
+          font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+          text-align: center;
+        }
+        >h2{
+          font-size: 22px;
+        }
+        >p{
+          font-size: 16px;
+          font-style: italic;
+          margin: 20px;
+          transition: 1s;
+        }
+        >a{
+          display: flex;
+          width: 50%;
+          height: 40px;
+          background-color: black;
+          justify-content: center;
+          align-items: center;
+          text-decoration: none;
+          margin: auto;
+          margin-top: 10px;
+          &:hover {
+            background-color: white;
+            color: rgb(30, 29, 29);
+          }
+        }
+      }
+    }
+  }
+  </style>
+</head>
+<body>
+  <main>
+  <figure>
+    <img src="asset/s15.jpg" alt="">
+    <div>
+      <h2>Observation history</h2>
+      <p>Advances in astronomy have always been driven by technology. After centuries of success in optical astronomy, recent decades have seen major progress in other regions of the electromagnetic spectrum.</p>
+      <a href="">Click Me</a>
+    </div>
+  </figure>
+  <figure>
+    <img src="asset/S10.jpg" alt="">
+    <div>
+      <h2>Multi-wavelength observation</h2>
+      <p>The first non-visual study of galaxies, particularly active galaxies, was made using radio frequencies. The Earth's atmosphere is nearly transparent to radio between 5 MHz and 30 GHz. The ionosphere blocks signals below this range.</p>
+      <a href="">Click Me</a>
+    </div>
+  </figure>
+  <figure>
+    <img src="asset/S11.jpg" alt="">
+    <div>
+      <h2>Multi-wavelength observation</h2>
+      <p>Large radio interferometers have been used to map the active jets emitted from active nuclei The distribution of hot gas in galactic clusters can be mapped by X-rays. The existence of supermassive black holes at the cores of galaxies was confirmed through X-ray astronomy.</p>
+      <a href="">Click Me</a>
+    </div>
+  </figure>
+  <figure>
+    <img src="asset/S13.jpg" alt="">
+    <div>
+      <h2>Multi-wavelength observation</h2>
+      <p>Ultraviolet and X-ray telescopes can observe highly energetic galactic phenomena. Ultraviolet flares are sometimes observed when a star in a distant galaxy is torn apart from the tidal forces of a nearby black hole.</p>
+      <a href="">Click Me</a>
+    </div>
+  </figure>
+</main>
+</body>
+</html>
